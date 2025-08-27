@@ -21,7 +21,7 @@ A simple example of **Students** is used to meet all required deliverables.
 class Person:
     def __init__(self, name, age):
         self.name = name
-        self.__age = age   # Encapsulation
+        self.__age = age   # Encapsulation: private attribute
 
     def get_age(self):
         return self.__age
@@ -47,22 +47,29 @@ class Student(Person):  # Inheritance
         return f"{self.name} is studying hard!"
 
 # Example usage
-student1 = Student("Mapesho", 19, "Nursing")
+student1 = Student("Alice", 19, "Nursing")
 print(student1.introduce())
 print(student1.study())
 print("Old age:", student1.get_age())
 student1.set_age(20)
 print("New age:", student1.get_age())
+```
 
-# Example output
-I am Alice, 20 years old, studying Nursing.
+---
+
+## Sample Output
+```
+I am Alice,  years old, studying Nursing.
 Alice is studying hard!
 Old age: 19
 New age: 20
+```
+
+---
 
 ## How to Run 🖥️
 
-Follow these simple steps:
+Follow these steps to run the program:
 
 1. **Open a text editor**  
    - Examples: Notepad, VS Code, PyCharm  
@@ -74,25 +81,26 @@ Follow these simple steps:
    - Save it as `student.py`  
 
 4. **Open a terminal/command prompt**  
-   - On Windows: Press `Win + R`, type `cmd`, and press Enter  
-   - On Mac/Linux: Open the **Terminal** app  
+   - On **Windows**: Press `Win + R`, type `cmd`, and press Enter  
+   - On **Mac/Linux**: Open the **Terminal** app  
 
-5. **Navigate to the folder** where the file is saved  
+5. **Navigate to the folder** where the file is saved:  
    ```bash
    cd Desktop
-Run the program
+   ```
 
-On Mac/Linux:
+6. **Run the program**  
+   - On **Mac/Linux**:  
+     ```bash
+     python3 student.py
+     ```
+   - On **Windows**:  
+     ```bash
+     python student.py
+     ```
 
-bash
-Copy code
-python3 student.py
-On Windows:
+7. ✅ You should see the **sample output** printed on your screen.
 
-bash
-Copy code
-python student.py
+---
 
-You should then see the sample output displayed.
-
-@ 2025 Joseph - PLP Academy
+@ 2025 Joseph - PLP Academy  
