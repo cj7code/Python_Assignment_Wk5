@@ -21,7 +21,7 @@ A simple example of **Students** is used to meet all required deliverables.
 class Person:
     def __init__(self, name, age):
         self.name = name
-        self.__age = age   # Encapsulation
+        self.__age = age   # Encapsulation: private attribute
 
     def get_age(self):
         return self.__age
@@ -47,39 +47,45 @@ class Student(Person):  # Inheritance
         return f"{self.name} is studying hard!"
 
 # Example usage
-student1 = Student("Mapesho", 19, "Nursing")
+student1 = Student("Alice", 20, "Nursing")
 print(student1.introduce())
 print(student1.study())
 print("Old age:", student1.get_age())
-student1.set_age(20)
+student1.set_age(21)
 print("New age:", student1.get_age())
-
-# Example output
+Sample Output
+pgsql
+Copy code
 I am Alice, 20 years old, studying Nursing.
 Alice is studying hard!
-Old age: 19
-New age: 20
+Old age: 20
+New age: 21
+How to Run 🖥️
+Follow these steps to run the program:
 
-## How to Run 🖥️
+Open a text editor
 
-Follow these simple steps:
+Examples: Notepad, VS Code, PyCharm
 
-1. **Open a text editor**  
-   - Examples: Notepad, VS Code, PyCharm  
+Copy the code
 
-2. **Copy the code**  
-   - Paste the provided Python code into a new file  
+Paste the provided Python code into a new file
 
-3. **Save the file**  
-   - Save it as `student.py`  
+Save the file
 
-4. **Open a terminal/command prompt**  
-   - On Windows: Press `Win + R`, type `cmd`, and press Enter  
-   - On Mac/Linux: Open the **Terminal** app  
+Save it as student.py
 
-5. **Navigate to the folder** where the file is saved  
-   ```bash
-   cd Desktop
+Open a terminal/command prompt
+
+On Windows: Press Win + R, type cmd, and press Enter
+
+On Mac/Linux: Open the Terminal app
+
+Navigate to the folder where the file is saved:
+
+bash
+Copy code
+cd Desktop
 Run the program
 
 On Mac/Linux:
@@ -92,7 +98,5 @@ On Windows:
 bash
 Copy code
 python student.py
-
-You should then see the sample output displayed.
 
 @ 2025 Joseph - PLP Academy
