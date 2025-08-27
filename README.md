@@ -47,56 +47,60 @@ class Student(Person):  # Inheritance
         return f"{self.name} is studying hard!"
 
 # Example usage
-student1 = Student("Alice", 20, "Nursing")
+student1 = Student("Mapesho", 19, "Nursing")
 print(student1.introduce())
 print(student1.study())
 print("Old age:", student1.get_age())
-student1.set_age(21)
+student1.set_age(20)
 print("New age:", student1.get_age())
-Sample Output
-pgsql
-Copy code
-I am Alice, 20 years old, studying Nursing.
+```
+
+---
+
+## Sample Output
+```
+I am Alice, 19 years old, studying Nursing.
 Alice is studying hard!
-Old age: 20
-New age: 21
-How to Run 🖥️
+Old age: 19
+New age: 20
+```
+
+---
+
+## How to Run 🖥️
+
 Follow these steps to run the program:
 
-Open a text editor
+1. **Open a text editor**  
+   - Examples: Notepad, VS Code, PyCharm  
 
-Examples: Notepad, VS Code, PyCharm
+2. **Copy the code**  
+   - Paste the provided Python code into a new file  
 
-Copy the code
+3. **Save the file**  
+   - Save it as `student.py`  
 
-Paste the provided Python code into a new file
+4. **Open a terminal/command prompt**  
+   - On **Windows**: Press `Win + R`, type `cmd`, and press Enter  
+   - On **Mac/Linux**: Open the **Terminal** app  
 
-Save the file
+5. **Navigate to the folder** where the file is saved:  
+   ```bash
+   cd Desktop
+   ```
 
-Save it as student.py
+6. **Run the program**  
+   - On **Mac/Linux**:  
+     ```bash
+     python3 student.py
+     ```
+   - On **Windows**:  
+     ```bash
+     python student.py
+     ```
 
-Open a terminal/command prompt
+7. ✅ You should see the **sample output** printed on your screen.
 
-On Windows: Press Win + R, type cmd, and press Enter
-
-On Mac/Linux: Open the Terminal app
-
-Navigate to the folder where the file is saved:
-
-bash
-Copy code
-cd Desktop
-Run the program
-
-On Mac/Linux:
-
-bash
-Copy code
-python3 student.py
-On Windows:
-
-bash
-Copy code
-python student.py
+---
 
 @ 2025 Joseph - PLP Academy
